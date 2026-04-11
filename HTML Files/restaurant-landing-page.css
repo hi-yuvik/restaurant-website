@@ -1,0 +1,666 @@
+:root
+{
+    --navbar-height: 87px;
+}
+
+*, ::before, ::after
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: #F5F0E8;
+    background-color: #0F0A07;
+}
+
+.navbar
+{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: #1d140e;
+    z-index: 100;
+    padding: 1.5rem 2.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.logo
+{
+    font-size: 1.5rem;
+    color: #f04343;
+}
+
+.nav-links
+{
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+    color:antiquewhite;
+    transition: color 0.3s ease, transform 0.2s ease;
+    transition: 0.3s;
+}
+.nav-links a
+{
+    display: inline-block;
+    text-decoration: none;
+    color: antiquewhite;
+    transition: 0.3s;
+}
+.nav-links a:hover
+{
+    text-decoration: none;
+    color:#f04343;
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+.login-btn
+{
+    font-size: 1.2rem;
+    color: #ffffff;
+    background-color: #f04343;;
+    padding: 0.5rem 0.75rem;
+    border: 0rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.cta
+{
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: transparent;
+    cursor: pointer;
+    border-radius: 0.75rem;
+}
+.btn-prim
+{
+    color:#ffffff;
+    background-color: #f04343;
+    border: 1px solid transparent;
+}
+.btn-sec
+{
+    color: #f04343;
+    border: 1px solid #f04343;
+    background-color: transparent;
+}
+
+.hero-section
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    height: 100vh;
+    padding-top: var(--navbar-height);
+    background-image: url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.overlay
+{
+    position: absolute;
+    inset:0;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+
+    background: #0F0A0799;
+}
+
+
+.hero-title
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0.25rem;
+    z-index: 1;
+}
+.h1-text
+{
+    color:#ffffff;
+}
+.hero-title .p-text
+{
+    color: #d6d3cf;
+    margin-bottom: 0.5rem;
+}
+.hero-action
+{
+    display: flex;
+    margin-top: 0.5rem;
+    gap: 0.75rem;
+}
+
+.about-section
+{
+    padding: 4rem 2rem;
+}
+
+.about-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.about-image img
+{
+    width: 100%;
+    height: 30rem;
+    border-radius: 0.5rem;
+}
+.about-text
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 35rem;
+}
+.about-text .about-h2
+{
+    font-size: 2.5rem;
+    color: #f04343;
+}
+.about-text .about-p1
+{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #d6d3cf;
+    margin-bottom: 1.5rem;
+}
+.about-text .about-p
+{
+    color: #d6d3cf;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn-about
+{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 1rem 0.75rem;
+    background-color: #f04343;
+    color:#ffffff;
+    max-width: 12rem;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.menu-section
+{
+    background:#f3f3f3;
+    padding: 4rem 2rem;
+}
+
+.menu-container
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 80rem;
+    gap: 1.5rem;
+    margin: 0 auto;
+}
+
+.menu-heading
+{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.menu-title
+{
+    font-size: 2.5rem;
+    /* margin-bottom: 0.5rem; */
+    color:#f04343;
+}
+.menu-para
+{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #747474;
+}
+
+.cards-wrapper
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+    gap: 1.5rem;
+}
+.menu-card
+{
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.menu-card img
+{
+    width: 100%;
+    height: 18rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.menu-header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.55rem;
+    padding: 0.5rem;
+}
+.dish-h3
+{
+    color:#131313;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.price
+{
+    color: #f04343;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.gallery-section
+{
+    background-color: #f04343;
+    padding: 4rem 2rem;
+}
+
+.gallery-container
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 80rem;
+    height: auto;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.gallery-header
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0.25rem;
+}
+
+.gallery-h2
+{
+    font-size: 2.5rem;
+    color: #1d140e;
+}
+.gallery-p
+{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #e4e4e4;
+}
+
+.gallery-images
+{
+    display: flex;
+    gap:0.5rem;
+    height:40rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.column
+{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card
+{
+    position: relative;
+    overflow: hidden;
+    gap: 1rem;
+}
+.card img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 1rem;
+}
+
+.square
+{
+    flex: 2;
+}
+.wide
+{
+    flex: 1;
+}
+.tall
+{
+    flex: 3;
+}
+
+.testimonial-section
+{
+    padding: 4rem 2rem;
+    background-color: #f3f3f3;
+}
+
+.testimonial-container
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 80rem;
+    gap: 2rem;
+}
+
+.testimonial-content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-h2
+{
+    font-size: 2.5rem;
+    color:#1d140e;
+    text-align: center;
+}
+.testimonial-p
+{
+    font-size: 1.25rem;
+    font-size: 400;
+    color: #747474;
+    text-align: center;
+}
+
+.testimonial-cards
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.5rem;
+    padding: 0 1rem;
+}
+.testimonial-card
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:#ffffff;
+    overflow: hidden;
+    border-radius: 1rem;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.testimonial-card img
+{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 20rem;
+    object-fit: cover;
+}
+.testimonial-text
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.testimonial-review
+{
+    font-size: 1rem;
+    color: #131313;
+}
+.testimonial-name
+{
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    color:#f04343;
+}
+
+.reservation-section
+{
+    padding: 4rem 2rem;
+    background: #161629;
+}
+
+.reservation-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.reservation-header
+{
+    display:flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: center;
+}
+.reservation-h2
+{
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    color: #f04343;
+}
+.reservation-p
+{
+    font-size: 1.25rem;
+    font-family: 400;
+    color: #d3d3d3;
+}
+
+.reservation-layout
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.reservation-form-wrap
+{
+    display: flex;
+    flex-direction: column;
+    background: #20214e;
+    padding: 1.5rem 1.25rem;
+    gap: 0.75rem;
+    border: 1px solid #353780;
+    border-radius: 0.75rem;
+}
+
+fieldset
+{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+legend
+{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.form-fieldset
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    gap: 0.75rem;
+}
+.form-legend
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #f04343;
+}
+.form-row
+{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.form-group
+{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+
+}
+.form-group input,
+.form-group select,
+.form-group textarea
+{
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.25rem;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+}
+
+.reservation-form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.divider
+{
+    border: none;
+    height: 2px;
+    border-radius: 999px;
+    background: rgba(90, 97, 207, 0.25);
+    margin: 0.75rem 0;
+}
+.divider2
+{
+    border: none;
+    height: 2px;
+    border-radius: 999px;
+    background: rgba(58, 62, 116, 0.25);
+    margin: 0.75rem 0;
+}
+
+.form-submit
+{
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    padding: 1rem 2rem;
+    background: #f04343;
+    color: #ffffff;
+    border-radius: 0.5rem;
+}
+
+.reservation-contact
+{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1.25rem;
+    gap: 1rem;
+    background: #20214e;
+    border-radius: 0.75rem;
+    border: 1px solid #353780;
+}
+
+.contact-block
+{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.contact-label
+{
+    color: #f04343;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.contact-address
+{
+    color: #f3f3f3;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.hours-list
+{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+.hours-row
+{
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+}
+.left
+{
+    min-width: 5rem;
+}
+.text-col
+{
+    color: #d3d3d3;
+}
+.contact-links, .text-deco
+{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #d3d3d3;
+    gap: 0.25rem;
+}
+
+.map-wrap
+{
+    height: 20rem;
+    border: 0.5rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1.25rem rgba(60, 69, 131, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+

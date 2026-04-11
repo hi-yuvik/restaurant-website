@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- header, nav, main, section, article, aside, footer, figure, figcaption, form, label, input, textarea, button, tablet, thead/tbody, video/audio, canvas -->
+
+  <!-- HEADER: Intro section of the page -->
+  <header>
+    <h1>My Learning Website</h1>
+
+    <!-- NAV: Navigation links -->
+    <nav>
+      <a href="#about">About</a>
+      <a href="#media">Media</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    </header>
+
+  <!-- MAIN: Main content of the page -->
+  <main>
+    <!-- SECTION: Grouped content -->
+    <section id="about">
+      <h2>About This Page</h2>
+
+      <!-- ARTICLE: Standalone content -->
+      <article>
+        <h3>Why Semantic HTML Matters</h3>
+        <p>
+          Semantic HTML improves accessibility, SEO, and code readability.
+        </p>
+
+        <!-- FIGURE + FIGCAPTION -->
+        <figure>
+          <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+          <figcaption>Example image inside a figure</figcaption>
+        </figure>
+      </article>
+
+      <!-- ASIDE: Extra/side information -->
+      <aside>
+        <h4>Did You Know?</h4>
+        <p>Search engines rely heavily on semantic HTML.</p>
+      </aside>
+    </section>
+
+    <!-- SECTION: Media section -->
+    <section id="media">
+      <h2>Media Examples</h2>
+
+      <!-- VIDEO -->
+      <video controls width="300">
+        <source src="sample.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
+
+      <!-- AUDIO -->
+      <audio controls>
+        <source src="sample.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+      </audio>
+
+      <!-- CANVAS -->
+      <canvas id="myCanvas" width="300" height="150"></canvas>
+    </section>
+
+    <!-- SECTION: Table -->
+    <section>
+      <h2>Skill Table</h2>
+
+      <!-- TABLE -->
+      <table border="1">
+        <!-- THEAD -->
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Skill</th>
+          </tr>
+        </thead>
+
+        <!-- TBODY -->
+        <tbody>
+          <tr>
+            <td>Yuvi</td>
+            <td>Frontend</td>
+          </tr>
+          <tr>
+            <td>Alex</td>
+            <td>Backend</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- SECTION: Form -->
+    <section id="contact">
+      <h2>Contact Form</h2>
+
+      <!-- FORM -->
+      <form>
+
+        <!-- LABEL + INPUT -->
+        <label for="name">Name:</label>
+        <input id="name" type="text">
+
+        <br><br>
+
+        <!-- LABEL + TEXTAREA -->
+        <label for="message">Message:</label>
+        <textarea id="message"></textarea>
+
+        <br><br>
+
+        <!-- BUTTON -->
+        <button type="submit">Send</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!-- FOOTER: End of page -->
+  <footer>
+    <p>© 2025 Semantic HTML Demo</p>
+  </footer>
+
+  <!-- CANVAS SCRIPT -->
+  <script>
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+
+    ctx.fillStyle = "blue";
+    ctx.fillRect(50, 40, 200, 70);
+  </script>
+    
+
+
+</body>
+</html>

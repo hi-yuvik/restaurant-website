@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Justify Content Examples</title>
+  <style>
+    .container {
+      display: flex;
+      border: 2px solid black;
+      margin: 20px;
+      height: 60px;
+    }
+    .box {
+      background: lightblue;
+      padding: 10px;
+      margin: 5px;
+    }
+    /* Different justify-content examples */
+    .jc-start   { justify-content: flex-start; }   /* Items at left */
+    .jc-end     { justify-content: flex-end; }     /* Items at right */
+    .jc-center  { justify-content: center; }       /* Items centered */
+    .jc-between { justify-content: space-between;} /* First left, last right, space in middle */
+    .jc-around  { justify-content: space-around; } /* Equal space around */
+    .jc-evenly  { justify-content: space-evenly; } /* Equal space between and edges */
+  </style>
+</head>
+<body>
+  <div class="container jc-start">
+    <div class="box">One</div><div class="box">Two</div><div class="box">Three</div>
+  </div>
+
+  <div class="container jc-end">
+    <div class="box">One</div><div class="box">Two</div><div class="box">Three</div>
+  </div>
+
+  <div class="container jc-center">
+    <div class="box">One</div><div class="box">Two</div><div class="box">Three</div>
+  </div>
+
+  <div class="container jc-between">
+    <div class="box">One</div><div class="box">Two</div><div class="box">Three</div>
+  </div>
+
+  <div class="container jc-around">
+    <div class="box">One</div><div class="box">Two</div><div class="box">Three</div>
+  </div>
+
+  <div class="container jc-evenly">
+    <div class="box">One</div><div class="box">Two</div><div class="box">Three</div>
+  </div>
+</body>
+</html>

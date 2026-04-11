@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Full name:</label>
+            <input type="text" id="name" placeholder="Full name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter email" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Enter Age" required>
+
+            <label for="ph">Phone Number:</label>
+            <input type="number" id="ph" placeholder="Enter 10 digit mobile number" min="0000000000" max="9999999999" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" placeholder="Birth-date" required>
+
+            <label for="passwd">Password</label>
+            <input type="password" id="passwd" placeholder="Enter Password" required>
+
+            <p>Gender</p>
+            <label>Male
+                <input type="radio" name="gender" value="male">
+            </label>
+            <label>Female
+                <input type="radio" name="gender" value="Female">
+            </label>
+            <p>Interests</p>
+            <label>Programming
+                <input type="checkbox" name="programming" value="programming">
+            </label>
+            <label>Gaming
+                <input type="checkbox" name="gaming" value="gaming">
+            </label>
+            <label>Writing
+                <input type="checkbox" name="writing" value="writing">
+            </label>
+            <label>Painting
+                <input type="checkbox" name="painting" value="painting">
+            </label>
+
+            <label>Citizen
+                <select name="country-citizen" required>
+                    <option value="">-- Select your Citizen Country --</option>
+                    <option value="bulgaria">Bulgaria</option>
+                    <option value="india">India</option>
+                    <option value="norway">Norway</option>
+                    <option value="spain">Spain</option>
+                    <option value="russia">Russia</option>
+                    <option value="venezuela">Venezuela</option>
+                </select>
+            </label>
+
+            <label>Feedback
+                <textarea name="feedback" rows="4"></textarea>
+            </label>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
