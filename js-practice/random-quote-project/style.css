@@ -1,0 +1,34 @@
+.quote-container
+{
+    border: 0.5px solid #c9c9c9;
+    display: inline-block;
+    padding: 0 1.75rem 0.75rem .75rem;
+    border-radius: 1rem;
+    gap: 1rem;
+}
+
+.quote-title
+{
+    font-size: 2rem;
+    color: steelblue;
+}
+
+#quote-block
+{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+    background-color: antiquewhite;
+    margin-bottom: 0.75rem;
+    border-radius: 0.75rem;
+}
+#quote-block blockquote
+{
+    margin-inline-start: 0; /* Applies only to blockquote part */ /* left */
+    margin-inline-end: 0; /* right */
+    margin-block-start: 0; /* top */
+    margin-block-end: 0; /* bottom */
+    padding: 0.5rem 0 0.25rem; /* top, left & right, bottom */ 
+
+    /* Inspect -> Click -> Go to Compute Tab -> Find relevant info */
+}

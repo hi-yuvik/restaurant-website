@@ -1,0 +1,26 @@
+*, ::before, ::after
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#2c2b2a;
+    background-color: #fcf8ee; 
+}
+
+.navbar
+{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: #c23a04;
+}
